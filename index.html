@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>time-10-time-print</title>
+            <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <button onclick="currentTime();">click</button>
+
+    <!--<script>
+        function currentTime(){
+            const timee = new Date();
+            let time = timee.toLocaleTimeString();
+            console.log(time);
+            id=setTimeout(currentTime,1000)
+            
+        }
+        
+    </script>-->
+    <script>
+        var a=1;
+        let stop=setInterval(function (time) {
+        a++;
+    if(a>10){
+        clearInterval(stop);
+    }
+    document.write(new Date().toLocaleTimeString()+ " Welcome");
+    document.write("<br>");
+},3000
+)
+    </script>
+</body>
